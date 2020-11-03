@@ -3,9 +3,14 @@
     [crux.api :as crux]
     [tick.alpha.api]))
 
-(def crux-node (crux/start-node {}))
+;; >= 1.12
+;(def crux-node (crux/start-node {}))
+
+;; < 1.12
+(def crux-node (crux/start-node {:crux.node/topology '[crux.standalone/topology]}))
 
 (comment
+  (crux/status crux-node)
   (crux/await-tx
     crux-node
     (crux/submit-tx

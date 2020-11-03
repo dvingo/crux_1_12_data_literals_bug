@@ -1,3 +1,8 @@
 {:deps {
-        juxt/crux-core {:mvn/version "20.09-1.12.1-beta"}
+        ;juxt/crux-core {:mvn/version "20.09-1.12.1-beta"}
+        ;; also happens:
+        ;juxt/crux-core {:mvn/version "20.09-1.11.0-beta"}
+
+        juxt/crux-core {:mvn/version "20.07-1.10.0-beta"}
+
         tick/tick      {:mvn/version "0.4.27-alpha"}}}
